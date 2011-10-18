@@ -1,6 +1,10 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Omni completion config
+filetype plugin on
+set ofu=syntaxcomplete#Complete
+
 " Command-T config
 noremap <leader>o <Esc>:CommandT<CR>
 noremap <leader>O <Esc>:CommandTFlush<CR>
