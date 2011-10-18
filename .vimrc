@@ -16,3 +16,7 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 
 " SuperTab config
 let g:SuperTabDefaultCompletionType = "context"
+
+" TagBar config
+let g:tagbar_usearrows = 1
+nnoremap <leader>l :TagbarToggle<CR>
