@@ -50,6 +50,9 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste''
 set pastetoggle=<F11>
 
+" Enable syntax highlighting
+syntax on
+
 "------------------------------------------------------------------------------
 " Indentation config
 set shiftwidth=2
