@@ -93,6 +93,10 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
+" NerdTree config
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 " Remove trailing spaces
 function TrimWhiteSpace()
   %s/\s*$//
